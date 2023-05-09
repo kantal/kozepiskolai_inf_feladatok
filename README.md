@@ -1,4 +1,4 @@
-## \# Az informatikai érettségi programozási feladatainak megoldásai Python3 nyelven
+# Az informatikai érettségi programozási feladatainak megoldásai Python3 nyelven
 
 Az itt közzétett programok csak egy-egy példát jelentenek a feladatok
 megoldására, ám számtalan más megvalósítás is elképzelhető. A feladatok

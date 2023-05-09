@@ -1,6 +1,6 @@
 
 # Az informatikai érettségi programozási feladatainak megoldásai Python3 nyelven
----
+
 
  Az itt közzétett programok csak egy-egy példát jelentenek a feladatok megoldására, ám számtalan más megvalósítás is elképzelhető. A feladatok kiírásában általában szerepel, hogy a vizsgázó feltételezheti az adatfájlok és a beadott inputok megfelelőségét, azaz nem kell időt töltenie a helytelen adatokkal kapcsolatos hibák kezelésével, így az itt publikált forráskódok általában ezt figyelembe véve készültek. Némelyik feladathoz több megoldóprogram is kódolásra került, amelyek a programnyelv más-más szerkezeteit mutatják be. A különböző megoldások vizuális összehasonlítására az ingyenes és nyílt forrású [Meld](https://meld.app) programot ajánlom.
 
