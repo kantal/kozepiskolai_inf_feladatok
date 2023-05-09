@@ -1,0 +1,2 @@
+
+Az Oktatási Hivatal honlapján 2020-10-29-én fennlévő "sorozatok.cs" megoldás hibás. Ha a 7. feladatban a nap "sze", akkor az "NI" helyett használt "2200.01.01" dátum, mivel ez szerdai nap, rossz kimenetet eredményez.

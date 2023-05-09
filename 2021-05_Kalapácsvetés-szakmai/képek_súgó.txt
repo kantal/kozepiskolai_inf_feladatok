@@ -1,0 +1,48 @@
+Az egyes programozási nyelveken és technológiáknál javasolt képkezelési megoldások:
+
+1. Visual Studio C# - Windows Forms:
+====================================
+a. Adjon a grafikus projekthez hozzá a Visual Studio Solution Explorer-ben egy Images mappát!
+b. Adja hozzá a fenti mappába a zászlók képeit a Visual Studio-val!
+c. Hozzon létre egy PictureBox típusú objektumot a felhasználói felületre!
+d. Másolja be és alakítsa át a következő kódrészletet a megoldásának megfelelően:
+
+PictureBoxZászló.ImageLocation = "../../Images/" + kiválasztottVersenyző.Kód + ".png";
+
+2. Visual Studio C# - WPF:
+==========================
+a. Adjon a grafikus projekthez hozzá a Visual Studio Solution Explorer-ben egy Images mappát!
+b. Adja hozzá a fenti mappába a zászlók képeit a Visual Studio-val!
+c. Hozzon létre egy Image típusú objektumot a felhasználói felületre!
+d. Másolja be és alakítsa át a következő kódrészletet a megoldásának megfelelően:
+
+Uri uri = new Uri("Images/" + kiválasztottVersenyző.Kód + ".png", UriKind.Relative);
+ImageZászló.Source = new BitmapImage(uri);
+
+3. Java - Java FX:
+==================
+Image osztály használata javasolt ImageView-be ágyazva, mely Node-ként hozzáadható Pane-hez.
+Például:
+	Image zaszloKep = new Image("Images/hun.png");
+	ImageView zaszloImageView = new ImageView();
+	zaszloImageView.setImage(zaszloKep);
+	gridPane.add(zaszloImageView, .... );
+
+4. Java - Swing:
+================
+ImageIcon osztály használata javasolt, mely hozzáadható Pane-hez.
+Például:
+	String fileName = "ARG.png";
+	ImageIcon icon = new ImageIcon(fileName);
+	JLabel label = new JLabel(icon);
+	frame.getContentPane().add(new JScrollPane(label));
+
+5. Java - AWT:
+==============
+BufferedImage használata javasolt, melyet átadhatunk a Graphics g példánynak.
+Például:
+	BufferedImage img = null;
+	try {
+			img = ImageIO.read(new File("Images/hun.png"));
+			g.drawImage(img, ...)
+		} catch (IOException e) {...}

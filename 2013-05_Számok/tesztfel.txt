@@ -1,0 +1,11 @@
+3 8 Mi a Fibonacci-sorozat 6. eleme?
+2 8 Hany oldallapja van az oktaedernek?
+1 1514 Melyik evben volt a Dozsa-fele parasztfelkeles?
+2 1938 Mikor volt az Anschluss?
+3 3 Mennyi 1000 tizes alapu logaritmusa?
+1 19 Hany megyeje van Magyarorszagnak?
+1 2004 Mikor lett Magyarorszag az Europai Unio tagja?
+2 1456 Melyik evben volt a nandorfehervari diadal?
+2 17 Hany orszag alkotja az eurozonat (2012-ben)
+3 2 Mennyivel tobb 90 fok szinusza -90 fok szinuszanal?
+A feladatsorra összesen 20 pont adható.

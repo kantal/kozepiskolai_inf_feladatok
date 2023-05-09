@@ -1,0 +1,9 @@
+﻿Függvény napokszama(e1:egész, h1:egész, n1: egész, e2:egész, h2: egész, n2: egész): egész
+	h1 = (h1 + 9) MOD 12
+	e1 = e1 - h1 DIV 10
+	d1= 365*e1 + e1 DIV 4 - e1 DIV 100 + e1 DIV 400 + (h1*306 + 5) DIV 10 + n1 - 1
+	h2 = (h2 + 9) MOD 12
+	e2 = e2 - h2 DIV 10
+	d2= 365*e2 + e2 DIV 4 - e2 DIV 100 + e2 DIV 400 + (h2*306 + 5) DIV 10 + n2 - 1
+	napokszama:= d2-d1
+Függvény vége
