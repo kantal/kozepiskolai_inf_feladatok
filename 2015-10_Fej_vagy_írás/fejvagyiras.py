@@ -21,23 +21,23 @@ if dobás==tipp:
 	print("Ön eltalálta.")
 else:
 	print("Ön nem találta el.")
-	
+
 #--- 3. feladat ---
 print("\n3. feladat")
 dobások=0
 fejek=0
 with open("kiserlet.txt") as ff:
 	for sor in ff:
-		if sor.strip()=="I": 
+		if sor.strip()=="I":
 			dobások+=1
 		else:
 			dobások+=1
 			fejek+=1
-	
+
 print("A kísérlet", dobások,"dobásból állt.")
 
 #--- 4. feladat ---
-print("\n4. feladat")	
+print("\n4. feladat")
 print("A kísérlet során a fej relatív gyakorisága {0:.2f}% volt.".format(fejek/dobások*100) )
 
 #--- 5. feladat ---
@@ -46,15 +46,15 @@ fejszám=0
 sorozatok=0
 with open("kiserlet.txt") as ff:
 	for sor in ff:
-		if sor.strip()=="F": 
+		if sor.strip()=="F":
 			fejszám+=1
 		else:
 			if fejszám==2:
 				sorozatok+=1
 			fejszám=0
-				
+
 if fejszám==2:
-	sorozatok+=1				
+	sorozatok+=1
 
 print("A kísérlet során",sorozatok,"alkalommal dobtak pontosan két fejet egymás után.")
 
@@ -65,13 +65,13 @@ kezdet=None
 fejszám=0
 with open("kiserlet.txt") as ff:
 	for index,sor in enumerate(ff):
-		if sor.strip()=="F": 
+		if sor.strip()=="F":
 			fejszám+=1
 		else:
 			if hossz< fejszám:
 				hossz, kezdet = fejszám, index-fejszám
 			fejszám=0
-				
+
 if hossz<fejszám:
 	hossz, kezdet = fejszám, index-fejszám
 
@@ -86,11 +86,11 @@ for i in range(1000):
 	eset=""
 	for k in range(4):
 		eset+= random.choice("FI")
-	négyesek.append( eset)	
+	négyesek.append( eset)
 	if eset=="FFFF":
 		f3f+=1
 	elif eset=="FFFI":
-		f3í+=1	
+		f3í+=1
 
 with open("dobasok.txt","w") as ff:
 	ff.write("FFFF: {}, FFFI: {}\n".format(f3f,f3í))
@@ -99,5 +99,5 @@ with open("dobasok.txt","w") as ff:
 
 #---------------------------------------------------------------------------
 # További feladatok: https://eutlantis.k2os.hu
-# Ajánlott könyv:    Koós Antal: Python a gépben, 2. kiadás
+# Ajánlott könyv:    Koós Antal: Python a gépben
 

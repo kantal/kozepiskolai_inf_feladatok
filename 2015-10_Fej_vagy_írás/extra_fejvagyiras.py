@@ -24,11 +24,11 @@ elif tipp in fejminta:
 else:
 	print("Hibás tipp!")
 	exit(1)
-	
+
 dobás= random.choice("IF")
 print("A tipp {}, a dobás eredménye {} volt.".format(tipp,dobás) )
 print("Ön eltalálta." if dobás==tipp else "Ön nem találta el.")
-	
+
 #--- 3. feladat ---
 print("\n3. feladat")
 dobások=0
@@ -36,16 +36,16 @@ fejek=0
 with open("kiserlet.txt") as ff:
 	for sor in ff:
 		sor=sor.strip()
-		if sor in írásminta: 
+		if sor in írásminta:
 			dobások+=1
 		elif sor in fejminta:
 			dobások+=1
 			fejek+=1
-	
+
 print("A kísérlet {} dobásból állt.".format(dobások) )
 
 #--- 4. feladat ---
-print("\n4. feladat")	
+print("\n4. feladat")
 print("A kísérlet során a fej relatív gyakorisága {0:.2f}% volt.".format(fejek/dobások*100) )
 
 #--- 5. feladat ---
@@ -55,15 +55,15 @@ sorozatok=0
 with open("kiserlet.txt") as ff:
 	for sor in ff:
 		sor=sor.strip()
-		if sor in fejminta: 
+		if sor in fejminta:
 			fejszám+=1
 		elif sor in írásminta:
 			if fejszám==2:
 				sorozatok+=1
 			fejszám=0
-				
+
 if fejszám==2:
-	sorozatok+=1				
+	sorozatok+=1
 
 print("A kísérlet során {} alkalommal dobtak pontosan két fejet egymás után.".format(sorozatok))
 
@@ -76,7 +76,7 @@ fejszám=0
 with open("kiserlet.txt") as ff:
 	for index,sor in enumerate(ff):
 		sor=sor.strip()
-		if sor in fejminta: 
+		if sor in fejminta:
 			fejszám+=1
 			if fejszám==1:
 				kezdőfej=index
@@ -84,7 +84,7 @@ with open("kiserlet.txt") as ff:
 			if hossz< fejszám:
 				hossz, kezdet = fejszám, kezdőfej
 			fejszám=0
-				
+
 if hossz<fejszám:
 	hossz, kezdet = fejszám, kezdőfej
 
@@ -98,7 +98,7 @@ for i in range(1000):
 	eset=""
 	for k in range(4):
 		eset+= random.choice("FI")
-	négyesek.append(eset)	
+	négyesek.append(eset)
 	dnégy[eset]= dnégy.get(eset,0)+1
 
 with open("dobasok.txt","w") as ff:
@@ -118,5 +118,5 @@ for eset in rendnégy:
 
 #---------------------------------------------------------------------------
 # További feladatok: https://eutlantis.k2os.hu
-# Ajánlott könyv:    Koós Antal: Python a gépben, 2. kiadás
+# Ajánlott könyv:    Koós Antal: Python a gépben
 

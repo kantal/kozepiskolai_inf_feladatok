@@ -131,5 +131,5 @@ for nso in lépések:
 
 #---------------------------------------------------------------------------
 # További feladatok: https://eutlantis.k2os.hu
-# Ajánlott könyv:    Koós Antal: Python a gépben, 2. kiadás
+# Ajánlott könyv:    Koós Antal: Python a gépben
 
